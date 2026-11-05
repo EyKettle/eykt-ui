@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ],
   "license": "UNLICENSED",
   "files": [
     "src"
@@ -24,6 +27,7 @@
     "./composable/*": null
   },
   "scripts": {
+    "theme:generate": "tsx scripts/theme/build.ts",
     "css-types": "typed-scss-modules \"src/**/*.module.scss\" --exportType default --nameFormat camel",
     "css-types:check": "typed-scss-modules \"src/**/*.module.scss\" --exportType default --nameFormat camel --listDifferent",
     "check": "tsc -p tsconfig.lib.json",
@@ -42,5 +46,8 @@
     "tsx": "^4.23.15",
     "typed-scss-modules": "^8.1.1",
     "typescript": "7.0.2"
+  },
+  "dependencies": {
+    "@material/material-color-utilities": "0.4.0"
   }
 }
