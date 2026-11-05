@@ -1,0 +1,61 @@
+/* auto-generated, DO NOT EDIT. */
+:root {
+  color-scheme: light dark;
+  --eykt-color-background: light-dark(#fbf9f7, #0e0e0d);
+  --eykt-color-on-background: light-dark(#313331, #e5e6e2);
+  --eykt-color-surface: light-dark(#fbf9f7, #0e0e0d);
+  --eykt-color-surface-dim: light-dark(#d9dad6, #0e0e0d);
+  --eykt-color-surface-bright: light-dark(#fbf9f7, #2a2d2a);
+  --eykt-color-surface-container-lowest: light-dark(#ffffff, #000000);
+  --eykt-color-surface-container-low: light-dark(#f5f3f1, #131412);
+  --eykt-color-surface-container: light-dark(#efeeeb, #191a18);
+  --eykt-color-surface-container-high: light-dark(#e9e8e5, #1e201e);
+  --eykt-color-surface-container-highest: light-dark(#e2e3df, #242624);
+  --eykt-color-on-surface: light-dark(#313331, #e5e6e2);
+  --eykt-color-on-surface-variant: light-dark(#5e5f5d, #aaaba8);
+  --eykt-color-outline: light-dark(#7a7b78, #747673);
+  --eykt-color-outline-variant: light-dark(#b1b2af, #474846);
+  --eykt-color-inverse-surface: light-dark(#0e0e0d, #fbf9f7);
+  --eykt-color-inverse-on-surface: light-dark(#9e9d9b, #555554);
+  --eykt-color-primary: light-dark(#586059, #c0c9c0);
+  --eykt-color-primary-dim: light-dark(#4c544d, #b3bbb2);
+  --eykt-color-on-primary: light-dark(#f2faf0, #3a423b);
+  --eykt-color-primary-container: light-dark(#dce5db, #414942);
+  --eykt-color-on-primary-container: light-dark(#4c544d, #cad3c9);
+  --eykt-color-primary-fixed: light-dark(#dce5db, #dce5db);
+  --eykt-color-primary-fixed-dim: light-dark(#ced7cd, #ced7cd);
+  --eykt-color-on-primary-fixed: light-dark(#39413b, #39413b);
+  --eykt-color-on-primary-fixed-variant: light-dark(#555e56, #555e56);
+  --eykt-color-inverse-primary: light-dark(#f6fff5, #59615a);
+  --eykt-color-secondary: light-dark(#5d605c, #9c9f9a);
+  --eykt-color-secondary-dim: light-dark(#515450, #9c9f9a);
+  --eykt-color-on-secondary: light-dark(#f8f9f4, #1e211e);
+  --eykt-color-secondary-container: light-dark(#e1e3de, #393c39);
+  --eykt-color-on-secondary-container: light-dark(#50524f, #bec0bb);
+  --eykt-color-secondary-fixed: light-dark(#e1e3de, #e1e3de);
+  --eykt-color-secondary-fixed-dim: light-dark(#d3d5d0, #d3d5d0);
+  --eykt-color-on-secondary-fixed: light-dark(#3d403d, #3d403d);
+  --eykt-color-on-secondary-fixed-variant: light-dark(#595c59, #595c59);
+  --eykt-color-tertiary: light-dark(#476657, #e7fff1);
+  --eykt-color-tertiary-dim: light-dark(#3b594b, #d0f3e0);
+  --eykt-color-on-tertiary: light-dark(#e5fff0, #476557);
+  --eykt-color-tertiary-container: light-dark(#d9fce9, #d0f3e0);
+  --eykt-color-on-tertiary-container: light-dark(#436254, #3e5d4f);
+  --eykt-color-tertiary-fixed: light-dark(#d9fce9, #d9fce9);
+  --eykt-color-tertiary-fixed-dim: light-dark(#cbeddb, #cbeddb);
+  --eykt-color-on-tertiary-fixed: light-dark(#315042, #315042);
+  --eykt-color-on-tertiary-fixed-variant: light-dark(#4e6d5e, #4e6d5e);
+  --eykt-color-error: light-dark(#9f403d, #ee7d77);
+  --eykt-color-error-dim: light-dark(#4e0309, #bb5551);
+  --eykt-color-on-error: light-dark(#fff7f6, #490106);
+  --eykt-color-error-container: light-dark(#fe8983, #7f2927);
+  --eykt-color-on-error-container: light-dark(#752121, #ff9993);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}

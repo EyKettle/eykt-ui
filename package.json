@@ -24,7 +24,9 @@
       "solid": "./src/controls/*.tsx",
       "types": "./src/controls/*.tsx"
     },
-    "./composable/*": null
+    "./composable/*": null,
+    "./styles/tokens.css": "./src/styles/tokens.css",
+    "./styles/base.css": "./src/styles/base.css"
   },
   "scripts": {
     "theme:generate": "tsx scripts/theme/build.ts",

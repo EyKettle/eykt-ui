@@ -1,0 +1,105 @@
+/*
+ * Basic style contract.
+ */
+
+:root {
+  /* Typography */
+  --eykt-font-family:
+    "LXGW Neo XiHei", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --eykt-font-mono:
+    ui-monospace, "SFMono-Regular", "Cascadia Code", "Roboto Mono", monospace;
+  --eykt-font-size-small: 0.875rem;
+  --eykt-font-size-regular: 1rem;
+  --eykt-font-size-medium: 1.125rem;
+  --eykt-font-size-large: 1.25rem;
+  --eykt-line-height-tight: 1.25;
+  --eykt-line-height-regular: 1.5;
+  --eykt-font-weight-regular: 400;
+  --eykt-font-weight-medium: 500;
+  --eykt-font-weight-bold: 600;
+
+  /* Spacing */
+  --eykt-space-1: 0.25rem;
+  --eykt-space-2: 0.5rem;
+  --eykt-space-3: 0.75rem;
+  --eykt-space-4: 1rem;
+  --eykt-space-6: 1.5rem;
+  --eykt-space-8: 2rem;
+
+  /* Padding */
+  --eykt-padding-regular: var(--eykt-space-3) var(--eykt-space-4);
+
+  /* Radii */
+  --eykt-radius-small: 0.25rem;
+  --eykt-radius-regular: 0.5rem;
+  --eykt-radius-medium: 0.75rem;
+  --eykt-radius-large: 1rem;
+
+  /* Motion */
+  --eykt-ease-standard: cubic-bezier(0.5, 0, 0, 1);
+  --eykt-duration-short: 150ms;
+  --eykt-duration-long: 400ms;
+
+  /* Focus */
+  --eykt-focus-ring-width: 2px;
+  --eykt-focus-ring-offset: 2px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--eykt-font-family);
+  font-size: var(--eykt-font-size-regular);
+  line-height: var(--eykt-line-height-regular);
+  color: var(--eykt-color-on-surface, CanvasText);
+  background-color: var(--eykt-color-surface, Canvas);
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd) {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: var(--eykt-focus-ring-width) solid var(--eykt-color-primary, currentColor);
+  outline-offset: var(--eykt-focus-ring-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
