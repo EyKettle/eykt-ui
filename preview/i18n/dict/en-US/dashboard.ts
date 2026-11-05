@@ -1,3 +1,3 @@
 export default {
-  "dash.title": "Dashboard",
+	"dash.title": "Dashboard",
 } as const;

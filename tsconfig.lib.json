@@ -11,7 +11,7 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     // Throwaway output. .gitignore excludes it along with stray *.d.ts.
-    "outDir": ".types-check",
+    "outDir": ".types-check"
   },
-  "include": ["src"],
+  "include": ["src"]
 }
