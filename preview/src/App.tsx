@@ -1,6 +1,7 @@
 import type { Component } from "solid-js";
 import "./App.css";
 import { setLocale, t } from "#i18n";
+import { Box, Button } from "eykt-ui";
 
 // Demos are discovered from the filesystem, so the component list never has to
 // be maintained a second time. Every demo default-exports a component.
@@ -21,11 +22,11 @@ export default function App() {
 	};
 
 	return (
-		<main class="preview">
+		<main class="preview page content">
 			<h1>eykt-ui preview</h1>
-			<button onClick={handleLanguageSwitch}>{t("lang.switch")}</button>
+			<Button onClick={handleLanguageSwitch}>{t("lang.switch")}</Button>
 			{demos.length === 0 ? (
-				<p class="empty">{t("demo.empty")}</p>
+				<Box class="page wide">{t("demo.empty")}</Box>
 			) : (
 				demos.map((demo) => (
 					<section class="demo">
