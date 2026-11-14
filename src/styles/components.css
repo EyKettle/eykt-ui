@@ -1,0 +1,29 @@
+button {
+	cursor: pointer;
+}
+
+button {
+	margin: 0;
+	padding: var(--eykt-padding-regular);
+	border-radius: var(--eykt-radius-medium);
+	border: none;
+
+	color: var(--eykt-color-on-primary);
+	background-color: var(--eykt-color-primary);
+
+	transition-property: all;
+	transition-duration: var(--eykt-duration-long);
+}
+
+button:hover {
+	background-color: var(--eykt-color-primary-fixed);
+	transition-property: all, background-color;
+	transition-duration: var(--eykt-duration-long), var(--eykt-duration-short);
+}
+
+button:active {
+	background-color: var(--eykt-color-primary-dim);
+	transform: scale(0.96);
+	transition-property: all, transform;
+	transition-duration: var(--eykt-duration-long), var(--eykt-duration-short);
+}
