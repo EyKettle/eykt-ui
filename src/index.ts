@@ -1,5 +1,5 @@
 // Package-level aggregate entry — forwarding statements only.
-export {};
+export { default as Box } from "./components/Box";
 
 import "./styles/tokens.css";
 import "./styles/base.css";
