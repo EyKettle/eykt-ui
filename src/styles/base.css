@@ -27,7 +27,8 @@
   --eykt-space-8: 2rem;
 
   /* Padding */
-  --eykt-padding-regular: var(--eykt-space-3) var(--eykt-space-4);
+  --eykt-padding-small: var(--eykt-space-1) var(--eykt-space-3);
+  --eykt-padding-regular: var(--eykt-space-2) var(--eykt-space-4);
 
   /* Radii */
   --eykt-radius-small: 0.25rem;
@@ -38,6 +39,7 @@
   /* Motion */
   --eykt-ease-standard: cubic-bezier(0.5, 0, 0, 1);
   --eykt-duration-short: 150ms;
+  --eykt-duration-medium: 250ms;
   --eykt-duration-long: 400ms;
 
   /* Focus */
@@ -50,6 +52,7 @@
 *::after {
   box-sizing: border-box;
   user-select: none;
+  transition-timing-function: var(--eykt-ease-standard);
 }
 
 html {
