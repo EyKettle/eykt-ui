@@ -15,13 +15,14 @@ button {
 	transition-duration: var(--eykt-duration-long);
 }
 
-button:hover {
-	background-color: var(--eykt-color-primary-fixed);
+button.hover {
+	filter: saturate(150%) brightness(110%);
 	transition-property: all, background-color;
 	transition-duration: var(--eykt-duration-long), var(--eykt-duration-short);
 }
 
-button:active {
+button.press {
+	filter: none;
 	background-color: var(--eykt-color-primary-dim);
 	transform: scale(0.96);
 	transition-property: all, transform;
