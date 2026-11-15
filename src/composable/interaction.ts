@@ -56,6 +56,22 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 				props.onCall(e.currentTarget);
 			}
 		},
+		onKeyDown: (e) => {
+			const focusThis = document.activeElement === e.target;
+			if (e.key === "Enter" && focusThis) {
+				setState((state) => {
+					state.hovered = true;
+					state.pressed = true;
+				});
+			}
+		},
+		onKeyUp: (e) => {
+			const focusThis = document.activeElement === e.target;
+			if (e.key === "Enter" && focusThis) {
+				handleWindowBlur();
+				if (props?.onCall) props.onCall(e.currentTarget);
+			}
+		},
 	} satisfies JSX.HTMLAttributes<T>;
 	const classList = (): {
 		[k: string]: boolean | undefined;
