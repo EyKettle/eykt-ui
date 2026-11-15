@@ -9,7 +9,7 @@
 import { existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Plugin } from "vite";
-import { locales, namespaces } from "../i18n/config";
+import { locales, namespaces } from "../i18n/config.ts";
 
 export default function checkDictionaries(options?: { dictDir?: string }): Plugin {
 	let dir = "";

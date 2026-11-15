@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import solid from "@solidjs/vite-plugin";
-import checkDictionaries from "./plugins/check-dictionaries";
+import checkDictionaries from "./plugins/check-dictionaries.ts";
 
 export default defineConfig({
 	// Turnkey client mode: no index.html and no mount file — the plugin
