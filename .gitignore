@@ -8,6 +8,7 @@ dist/
 .types-check/
 *.d.ts
 !src/styles.d.ts
+!src/solid.d.ts
 !src/**/*.module.scss.d.ts
 
 # environment
