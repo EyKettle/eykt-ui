@@ -7,8 +7,8 @@ export interface BaseProps<T extends HTMLElement> extends HTMLAttr<T> {
 	onLeave?: (el: T) => void;
 	onPress?: (el: T) => void;
 	onRelease?: (el: T) => void;
-	onClick?: (el: SolidClickEvent<T>) => void;
+	onCall?: (el: T) => void;
 }
-export const BaseEvents = ["onHover", "onLeave", "onPress", "onRelease", "onClick"] as const;
+export const BaseEvents = ["onHover", "onLeave", "onPress", "onRelease", "onCall"] as const;
 
 export type Component<T extends HTMLElement, U extends object> = SolidComponent<BaseProps<T> & U>;

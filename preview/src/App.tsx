@@ -24,7 +24,7 @@ export default function App() {
 	return (
 		<main class="preview page content">
 			<h1>eykt-ui preview</h1>
-			<Button onClick={handleLanguageSwitch}>{t("lang.switch")}</Button>
+			<Button onCall={handleLanguageSwitch}>{t("lang.switch")}</Button>
 			{demos.length === 0 ? (
 				<Box class="page wide">{t("demo.empty")}</Box>
 			) : (

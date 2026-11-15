@@ -52,8 +52,8 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 		onClick: (e) => {
 			const pointedElement = document.elementFromPoint(e.x, e.y);
 			const focusThis = e.currentTarget.contains(pointedElement);
-			if (props?.onClick && focusThis) {
-				props.onClick(e.currentTarget);
+			if (props?.onCall && focusThis) {
+				props.onCall(e.currentTarget);
 			}
 		},
 	} satisfies JSX.HTMLAttributes<T>;
