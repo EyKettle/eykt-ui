@@ -2,7 +2,7 @@ import type { SolidClickEvent, SolidPointerEvent } from "../solid";
 import type { BaseProps } from "./baseFrame";
 import { createStore } from "solid-js";
 import { onCleanup } from "solid-js";
-import { isServer } from "@solidjs/web";
+import { isServer, type JSX } from "@solidjs/web";
 
 /**
  * `onClick` in config only trigger within element
@@ -16,7 +16,7 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 		pressed: false,
 	});
 	const handlers = {
-		tabIndex: 0,
+		tabindex: 0,
 		onPointerEnter: (e: SolidPointerEvent<T>) => {
 			setState((s) => void (s.hovered = true));
 			props?.onHover?.(e.currentTarget);
@@ -55,7 +55,7 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 				props.onClick(e);
 			}
 		},
-	};
+	} satisfies JSX.HTMLAttributes<T>;
 	const classList = (): {
 		[k: string]: boolean | undefined;
 	} => ({
