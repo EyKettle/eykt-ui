@@ -1,4 +1,3 @@
-import type { SolidClickEvent, SolidPointerEvent } from "../solid";
 import type { BaseProps } from "./baseFrame";
 import { createStore } from "solid-js";
 import { onCleanup } from "solid-js";
@@ -17,21 +16,21 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 	});
 	const handlers = {
 		tabindex: 0,
-		onPointerEnter: (e: SolidPointerEvent<T>) => {
+		onPointerEnter: (e) => {
 			setState((s) => void (s.hovered = true));
 			props?.onHover?.(e.currentTarget);
 		},
-		onPointerLeave: (e: SolidPointerEvent<T>) => {
+		onPointerLeave: (e) => {
 			setState((s) => void (s.hovered = false));
 			props?.onLeave?.(e.currentTarget);
 		},
-		onPointerDown: (e: SolidPointerEvent<T>) => {
+		onPointerDown: (e) => {
 			if (e.button !== 0) return;
 			e.currentTarget.setPointerCapture(e.pointerId);
 			setState((s) => void (s.pressed = true));
 			props?.onPress?.(e.currentTarget);
 		},
-		onPointerUp: (e: SolidPointerEvent<T>) => {
+		onPointerUp: (e) => {
 			if (e.button !== 0) return;
 			e.currentTarget.releasePointerCapture(e.pointerId);
 			setState((s) => void (s.pressed = false));
@@ -47,12 +46,14 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 				state.hovered = false;
 				state.pressed = false;
 			}),
-		onPointerMove: (e: SolidPointerEvent<T>) => {
+		onPointerMove: (e) => {
 			if (!options?.draggable) e.preventDefault();
 		},
-		onClick: (e: SolidClickEvent<T>) => {
-			if (props?.onClick && e.currentTarget.contains(document.elementFromPoint(e.x, e.y))) {
-				props.onClick(e);
+		onClick: (e) => {
+			const pointedElement = document.elementFromPoint(e.x, e.y);
+			const focusThis = e.currentTarget.contains(pointedElement);
+			if (props?.onClick && focusThis) {
+				props.onClick(e.currentTarget);
 			}
 		},
 	} satisfies JSX.HTMLAttributes<T>;

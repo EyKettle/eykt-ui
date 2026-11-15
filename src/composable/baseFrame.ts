@@ -1,5 +1,4 @@
 import type { Component as SolidComponent } from "solid-js";
-import type { SolidClickEvent } from "../solid";
 import type { JSX } from "@solidjs/web";
 
 type HTMLAttr<T> = Omit<JSX.HTMLAttributes<T>, keyof typeof BaseEvents>;
