@@ -7,7 +7,7 @@ const Button: Component<Props> = (props) => {
 	const restProps = omit(props, "children", "class");
 	const i = createInteractionState<Props, HTMLButtonElement>({}, props);
 	return (
-		<button {...restProps} {...i.handlers} class={[props.class, { ...i.classList() }]}>
+		<button {...i.handlers} {...restProps} class={[props.class, { ...i.classList() }]}>
 			{props.children}
 		</button>
 	);
