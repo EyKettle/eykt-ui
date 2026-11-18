@@ -53,6 +53,9 @@
   box-sizing: border-box;
   user-select: none;
   transition-timing-function: var(--eykt-ease-standard);
+
+  transition-property: color, background-color;
+  transition-duration: var(--eykt-duration-short), var(--eykt-duration-long);
 }
 
 html {
