@@ -4,6 +4,12 @@
 	gap: var(--eykt-space-2);
 	align-items: center;
 }
+.container.column {
+	display: flex;
+	flex-direction: row;
+	gap: var(--eykt-space-2);
+	align-items: center;
+}
 
 .page.wide {
 	width: min(100% - var(--eykt-space-4), 65ch);
