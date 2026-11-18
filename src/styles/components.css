@@ -5,7 +5,7 @@ button {
 button {
 	margin: 0;
 	padding: var(--eykt-padding-regular);
-	border-radius: var(--eykt-radius-medium);
+	border-radius: var(--eykt-radius-regular);
 	border: none;
 
 	color: var(--eykt-color-on-primary);

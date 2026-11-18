@@ -31,10 +31,10 @@
   --eykt-padding-regular: var(--eykt-space-2) var(--eykt-space-4);
 
   /* Radii */
-  --eykt-radius-small: 0.25rem;
-  --eykt-radius-regular: 0.5rem;
-  --eykt-radius-medium: 0.75rem;
-  --eykt-radius-large: 1rem;
+  --eykt-radius-small: var(--eykt-space-2);
+  --eykt-radius-regular: var(--eykt-space-3);
+  --eykt-radius-medium: var(--eykt-space-4);
+  --eykt-radius-large: var(--eykt-space-6);
 
   /* Motion */
   --eykt-ease-standard: cubic-bezier(0.5, 0, 0, 1);
