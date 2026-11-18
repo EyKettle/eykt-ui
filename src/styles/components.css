@@ -28,3 +28,33 @@ button.press {
 	transition-property: all, transform;
 	transition-duration: var(--eykt-duration-long), var(--eykt-duration-short);
 }
+
+input {
+	padding: var(--eykt-space-1) var(--eykt-space-2);
+	border: none;
+	border-radius: var(--eykt-radius-regular);
+
+	box-shadow: 0 0 0 1px var(--eykt-color-outline-variant);
+	background-color: var(--eykt-color-surface-container);
+
+	transition-property: all;
+	transition-duration: var(--eykt-duration-long);
+}
+
+input.hover {
+	box-shadow: 0 0 0 3px var(--eykt-color-primary);
+
+	transition-property: all, box-shadow;
+	transition-duration: var(--eykt-duration-long), var(--eykt-duration-short);
+}
+
+input.press {
+	transform: scale(0.96);
+	transition-property: all, transform;
+	transition-duration: var(--eykt-duration-long), var(--eykt-duration-short);
+}
+
+input:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px var(--eykt-color-primary);
+}
