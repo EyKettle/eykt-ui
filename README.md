@@ -1,6 +1,6 @@
 # Eykettle's UI kit
 
-English | [中文](README.zh-CN.md)
+English | [中文](README.zh-Hans.md)
 
 <!--Not Ready-->
 

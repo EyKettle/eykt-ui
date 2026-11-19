@@ -5,7 +5,7 @@ import { Router } from "./router";
 
 export default function App() {
 	const handleLanguageSwitch = () => {
-		setLocale((old) => (old === "en-US" ? "zh-CN" : "en-US"));
+		setLocale((old) => (old === "en" ? "zh-Hans" : "en"));
 	};
 
 	return (

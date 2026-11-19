@@ -1,6 +1,6 @@
 # Known Issues
 
-English | [中文](/docs_zh-CN/known-issues.md)
+English | [中文](/docs/zh-Hans/known-issues.md)
 
 ## Scope
 

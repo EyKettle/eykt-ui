@@ -11,8 +11,8 @@ type Widen<T> = {
 	[K in keyof T]: T[K] extends (...args: infer A) => unknown ? (...args: A) => string : string;
 };
 type BaseModules = {
-	common: typeof import("./dict/en-US/common").default;
-	dashboard: typeof import("./dict/en-US/dashboard").default;
+	common: typeof import("./dict/en/common").default;
+	dashboard: typeof import("./dict/en/dashboard").default;
 };
 
 type AllKeys = {
