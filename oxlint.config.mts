@@ -3,7 +3,8 @@ import solidV2 from "eslint-plugin-solid/configs/v2";
 
 export default defineConfig({
 	jsPlugins: ["eslint-plugin-solid"],
+	plugins: ["typescript"],
 	ignorePatterns: ["**/*.gen.ts", "dist"],
 	settings: solidV2.settings,
-	rules: solidV2.rules,
+	rules: { ...solidV2.rules, "typescript/no-import-type-side-effects": "error" },
 });
