@@ -9,7 +9,7 @@
 import { existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Plugin } from "vite";
-import { locales, namespaces } from "../i18n/config.ts";
+import { rawLocales, namespaces } from "../i18n/config.ts";
 
 export default function checkDictionaries(options?: { dictDir?: string }): Plugin {
 	let dir = "";
@@ -44,7 +44,7 @@ export default function checkDictionaries(options?: { dictDir?: string }): Plugi
 
 			// Config side: what the app declares loadable
 			const declared = new Set<string>();
-			for (const locale of locales) {
+			for (const locale of rawLocales) {
 				for (const ns of namespaces) {
 					declared.add(`${locale}/${ns}`);
 				}

@@ -1,6 +1,6 @@
 import type { Locale, Namespace } from "./types";
 
-export const locales = ["en", "zh-Hans"] as const;
+export const rawLocales = ["en", "zh-Hans"] as const;
 export const namespaces = ["common", "dashboard"] as const;
 export const defaultLocale: Locale = "en";
 export const dictPageMap = {

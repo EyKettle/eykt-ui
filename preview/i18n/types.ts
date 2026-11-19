@@ -1,10 +1,14 @@
-import { locales, namespaces } from "./config";
+import { rawLocales, namespaces } from "./config";
 
 export type DictionaryOf<K extends Namespace> = Widen<BaseModules[K]>;
 export type Dictionary = { [K in AllKeys]: ValueOf<K> };
 export type DictCache = Map<`${Locale}:${Namespace}`, DictionaryOf<Namespace>>;
 
-export type Locale = (typeof locales)[number];
+export type Locale = (typeof rawLocales)[number];
+export type ParsedLocale = {
+	locale: Locale;
+	parsed: Intl.Locale;
+};
 export type Namespace = (typeof namespaces)[number];
 
 type Widen<T> = {

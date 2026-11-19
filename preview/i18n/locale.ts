@@ -1,5 +1,11 @@
-import { Locale } from "./types";
-import { defaultLocale } from "./config";
+import { Locale, ParsedLocale } from "./types";
+import { defaultLocale, rawLocales } from "./config";
+
+export const locales: ParsedLocale[] = rawLocales.map((locale) => {
+	const parsed = parseLocale(locale);
+	if (!parsed) throw Error(`I18n presets has invalid locale: ${locale}`);
+	return { locale, parsed };
+});
 
 export function pickLocale(source: {
 	path?: string;
