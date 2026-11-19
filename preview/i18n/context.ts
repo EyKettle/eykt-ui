@@ -1,3 +1,4 @@
+// oxlint-disable solid/reactivity
 import { Accessor, createEffect, createMemo, createSignal } from "solid-js";
 import { DictCache, Dictionary, Locale, Namespace } from "./types";
 import { resolveTemplate, Translator, translator } from "@solid-primitives/i18n";
