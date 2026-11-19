@@ -1,8 +1,8 @@
 import type { JSX } from "@solidjs/web";
-import { Component, omit, ParentProps } from "solid-js";
+import { Component, omit } from "solid-js";
 import style from "./Box.module.scss";
 
-interface Props extends ParentProps<JSX.HTMLAttributes<HTMLDivElement>> {}
+interface Props extends JSX.HTMLAttributes<HTMLDivElement> {}
 const Box: Component<Props> = (props) => {
 	const restProps = omit(props, "children", "class");
 
