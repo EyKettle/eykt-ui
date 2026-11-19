@@ -33,7 +33,7 @@
     "css-types": "typed-scss-modules \"src/**/*.module.scss\" --exportType default --nameFormat camel",
     "css-types:check": "typed-scss-modules \"src/**/*.module.scss\" --exportType default --nameFormat camel --listDifferent",
     "check": "tsc -p tsconfig.lib.json",
-    "lint": "oxlint -c oxlint.config.mjs src preview"
+    "lint": "oxlint -c oxlint.config.mts src preview"
   },
   "peerDependencies": {
     "@solidjs/web": "^2.0.1",
