@@ -36,7 +36,8 @@ await writeFile(outputPath, generateCss(lightScheme, darkScheme) + "\n", "utf8")
 
 function generateCss(lightScheme: DynamicScheme, darkScheme: DynamicScheme): string {
 	const colors = new MaterialDynamicColors();
-	const declarations = colors.allColors.map((color) => {
+	const allColors = [...colors.allColors, colors.surfaceTint(), colors.shadow(), colors.scrim()];
+	const declarations = allColors.map((color) => {
 		const name = `--eykt-color-${color.name.replaceAll("_", "-")}`;
 		const lightValue = hexFromArgb(color.getArgb(lightScheme));
 		const darkValue = hexFromArgb(color.getArgb(darkScheme));

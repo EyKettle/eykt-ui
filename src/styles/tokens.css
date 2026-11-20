@@ -50,6 +50,9 @@
   --eykt-color-on-error: light-dark(#fff7f6, #490106);
   --eykt-color-error-container: light-dark(#fe8983, #7f2927);
   --eykt-color-on-error-container: light-dark(#752121, #ff9993);
+  --eykt-color-surface-tint: light-dark(#586059, #c0c9c0);
+  --eykt-color-shadow: light-dark(#000000, #000000);
+  --eykt-color-scrim: light-dark(#000000, #000000);
 }
 
 :root[data-theme="light"] {
