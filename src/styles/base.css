@@ -45,6 +45,16 @@
   /* Focus */
   --eykt-focus-ring-width: 2px;
   --eykt-focus-ring-offset: 2px;
+
+  /* Light & Shadow */
+  --eykt-shadow-opacity: 0.4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Light & Shadow */
+    --eykt-shadow-opacity: 0.6;
+  }
 }
 
 *,
