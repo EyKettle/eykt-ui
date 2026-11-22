@@ -15,6 +15,7 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 		pressed: false,
 	});
 	const handlers = {
+		"aria-disabled": props?.disabled ? "true" : "false",
 		tabindex: 0,
 		onPointerEnter: (e) => {
 			setState((s) => void (s.hovered = true));
@@ -78,6 +79,7 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 	} => ({
 		hover: state.hovered || state.pressed,
 		press: state.hovered && state.pressed,
+		disable: props?.disabled,
 	});
 
 	const handleWindowBlur = () => {

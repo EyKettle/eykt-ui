@@ -3,6 +3,7 @@ import type { JSX } from "@solidjs/web";
 
 type HTMLAttr<T> = Omit<JSX.HTMLAttributes<T>, keyof typeof BaseEvents>;
 export interface BaseProps<T extends HTMLElement> extends HTMLAttr<T> {
+	disabled?: boolean;
 	onHover?: (el: T) => void;
 	onLeave?: (el: T) => void;
 	onPress?: (el: T) => void;
