@@ -23,12 +23,15 @@
   --eykt-space-2: 0.5rem;
   --eykt-space-3: 0.75rem;
   --eykt-space-4: 1rem;
+  --eykt-space-5: 1.25rem;
   --eykt-space-6: 1.5rem;
   --eykt-space-8: 2rem;
 
   /* Padding */
   --eykt-padding-small: var(--eykt-space-1) var(--eykt-space-3);
   --eykt-padding-regular: var(--eykt-space-2) var(--eykt-space-4);
+  --eykt-padding-medium: var(--eykt-space-3) var(--eykt-space-4);
+  --eykt-padding-large: var(--eykt-space-4) var(--eykt-space-5);
 
   /* Radii */
   --eykt-radius-small: var(--eykt-space-2);
