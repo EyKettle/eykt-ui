@@ -28,6 +28,12 @@ button.press {
 	transition-property: all, transform;
 	transition-duration: var(--eykt-duration-long), var(--eykt-duration-short);
 }
+button.disable {
+	opacity: 0.6;
+	color: var(--eykt-color-on-primary-container);
+	background-color: var(--eykt-color-primary-container);
+	pointer-events: none;
+}
 
 input {
 	padding: var(--eykt-space-1) var(--eykt-space-2);
