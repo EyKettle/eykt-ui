@@ -77,6 +77,7 @@ export function createInteractionState<P extends BaseProps<T>, T extends HTMLEle
 	const classList = (): {
 		[k: string]: boolean | undefined;
 	} => ({
+		interactive: true,
 		hover: state.hovered || state.pressed,
 		press: state.hovered && state.pressed,
 		disable: props?.disabled,
