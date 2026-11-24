@@ -23,6 +23,15 @@
 	pointer-events: none;
 }
 
+.box {
+	display: block;
+	padding: var(--eykt-padding-regular);
+
+	border-radius: var(--eykt-radius-medium);
+	color: var(--eykt-color-on-surface);
+	background-color: var(--eykt-color-surface-container);
+}
+
 button {
 	margin: 0;
 	padding: var(--eykt-padding-regular);
