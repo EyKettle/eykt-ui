@@ -69,3 +69,22 @@ input:focus {
 	outline: none;
 	box-shadow: 0 0 0 3px var(--eykt-color-primary);
 }
+
+span.icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	font-size: 1.5em;
+	width: 1em;
+	align-self: center;
+	place-items: center;
+	vertical-align: text-bottom;
+
+	&::before {
+		content: attr(data-icon);
+		align-self: center;
+		vertical-align: text-bottom;
+	}
+}
