@@ -18,3 +18,16 @@
 .page.wide {
 	width: min(100% - var(--eykt-space-4), 65ch);
 }
+
+.gap {
+  --gap: var(--eykt-space-1);
+
+  &.before {
+    margin-left: var(--gap);
+  }
+
+  &.after {
+    margin-right: var(--gap);
+  }
+}
+
